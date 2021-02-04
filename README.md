@@ -1,10 +1,8 @@
+This repository contains the code and documentation of our work on the kaggle project ASHRAE - Great Energy Predictor III.
 ## Team :
 ### Project title: ASHRAE - Great Energy Predictor III, How much energy will a building consume?
 
 ### Professors:  Pr. Agathe GUILLOUX and Pr. Simon BUSSY
-
-## Repository : 
-This repository contains the code and documentation of our work on the kaggle project ASHRAE - Great Energy Predictor III.
 
 ### Students: Mamadou Kanoute , Imad Bouhou , Ibrahima BA
 
