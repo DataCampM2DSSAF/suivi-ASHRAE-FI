@@ -1,2 +1,1 @@
-ASHRAE
-Ibrahima Imad Mamadou Taleb
+## Team 
