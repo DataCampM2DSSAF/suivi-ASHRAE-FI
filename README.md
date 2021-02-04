@@ -1,5 +1,5 @@
 ## Team :
-### Title of project: ASHRAE - Great Energy Predictor III, How much energy will a building consume?
+### Project title: ASHRAE - Great Energy Predictor III, How much energy will a building consume?
 
 ### Professors:  Pr. Agathe GUILLOUX and Pr. Simon BUSSY
 
