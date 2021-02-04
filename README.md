@@ -3,25 +3,19 @@
 
 ### Professors:  Pr. Agathe GUILLOUX and Pr. Simon BUSSY
 
+## Repository : 
+This repository contains the code and documentation of our work on the kaggle project ASHRAE - Great Energy Predictor III.
 
 ### Students: Mamadou Kanoute , Imad Bouhou , Ibrahima BA
 
-## Project Description : 
-The main question about this project is:
+## Project Description :
 
-How much does it cost to cool a skyscraper in the summer?
-
-We know that it is a lot, and not just in dollars, but in environmental impact.
-
-But thankfully, significant investments are being made to improve building efficiencies to reduce costs and emissions. The question is, are the improvements working? 
-That’s where you come in. Under pay-for-performance financing, the building owner makes payments based on the difference between their real energy consumption 
-and what they would have used without any retrofits. The latter values have to come from a model. Current methods of estimation are fragmented and do not scale well. 
-Some assume a specific meter type or don’t work with different building types.
-
+Computing the value of energy efficiency improvements is difficult because we can't truly know how much energy a building would have used without improvements. 
+Therefore, the best solution is to build counterfactual models that predict the building’s pre-retrofit energy use rate in the post-retrofit period and to compare the value obtained with the real value in hand to know if the improvement made were efficient in lowering the energy consumption.
 
 ## The project's Goal
 
-In this project we'll develop accurate models of metered building energy usage in the following areas: chilled water, electric, hot water, and steam meters.
+In this project we'll develop accurate models to predict metered building energy usage in the following areas: chilled water, electric, hot water, and steam meters.
 The data comes from over 1,000 buildings over a three-year timeframe. With better estimates of these energy-saving investments, 
 large scale investors and financial institutions will be more inclined to invest in this area to enable progress in building efficiencies.
 
