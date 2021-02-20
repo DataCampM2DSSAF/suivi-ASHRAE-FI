@@ -62,7 +62,7 @@ def time_features(df):
 
     df['month'] = df['timestamp_0'].dt.month
 
-    df["timestamp_0"] = None	
+    df.drop(['timestamp_0'], axis=1)	
     return df
 
 
