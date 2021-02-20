@@ -56,13 +56,13 @@ def time_features(df):
     df.reset_index(drop=True)
     
     # Add more features
-    df["timestamp"] = pd.to_datetime(df["timestamp"],format="%Y-%m-%d %H:%M:%S")
-    df["hour"] = df["timestamp"].dt.hour
-    df["dayofweek"] = df["timestamp"].dt.weekday
+    df["timestamp_0"] = pd.to_datetime(df["timestamp"],format="%Y-%m-%d %H:%M:%S")
+    df["hour"] = df["timestamp_0"].dt.hour
+    df["dayofweek"] = df["timestamp_0"].dt.weekday
 
-    df['month'] = df['timestamp'].dt.month
+    df['month'] = df['timestamp_0'].dt.month
 
-   
+    df["timestamp_0"] = None	
     return df
 
 
