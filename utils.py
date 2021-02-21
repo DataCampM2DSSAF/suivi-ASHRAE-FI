@@ -60,7 +60,7 @@ def time_features(df):
     df["hour"] = df["timestamp_0"].dt.hour
     df["dayofweek"] = df["timestamp_0"].dt.weekday
 
-    df['month'] = df['timestamp_0'].dt.month
+    df['month'] = df['timestamp_0'].dt.month - 1
 
     df = df.drop(['timestamp_0'], axis=1)	
     return df
