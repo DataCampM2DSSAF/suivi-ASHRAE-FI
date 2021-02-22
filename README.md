@@ -1,24 +1,26 @@
-This repository contains the code and documentation of our work on the kaggle project ASHRAE - Great Energy Predictor III.
-## Team :
-### Project title: ASHRAE - Great Energy Predictor III, How much energy will a building consume?
+Ce dépôt contient le code et la documentation du travail sur le projet kaggle ASHRAE - Great Energy Predictor III.
 
-### Professors:  Pr. Agathe GUILLOUX and Pr. Simon BUSSY
+## Équipe :
+### Titre du projet: ASHRAE - Great Energy Predictor III.
 
-### Students: Mamadou Kanoute , Imad Bouhou , Ibrahima BA
+### Encadrement: Pr. Agathe GUILLOUX et Pr. Simon BUSSY
 
-## Project Description :
+### Etudiants: Mamadou Kanoute, Imad Bouhou, Ibrahima BA
 
-Computing the value of energy efficiency improvements is difficult because we can't truly know how much energy a building would have used without improvements. 
-Therefore, the best solution is to build counterfactual models that predict the building’s pre-retrofit energy use rate in the post-retrofit period and to compare the value obtained with the real value in hand to know if the improvement made were efficient in lowering the energy consumption.
+## Description du projet :
 
-## The project's Goal
+Il est difficile de calculer la valeur des améliorations de l'efficacité énergétique, car nous ne pouvons pas vraiment savoir combien d'énergie un bâtiment aurait utilisé sans améliorations.
+Par conséquent, la meilleure solution est de construire des modèles contrefactuels qui prédisent le taux de consommation d'énergie avant la rénovation du bâtiment dans la période post-rénovation et de comparer la valeur obtenue avec la valeur réelle en main pour savoir si l'amélioration apportée a été efficace pour réduire la consommation d'énergie.
 
-In this project we'll develop accurate models to predict metered building energy usage in the following areas: chilled water, electric, hot water, and steam meters.
-The data comes from over 1,000 buildings over a three-year timeframe. With better estimates of these energy-saving investments, 
-large scale investors and financial institutions will be more inclined to invest in this area to enable progress in building efficiencies.
+## L'objectif du projet
 
-link https://www.kaggle.com/c/ashrae-energy-prediction/overview
+Dans ce projet, nous développerons des modèles précis pour prédire la consommation d'énergie mesurée dans les bâtiments dans les domaines suivants: compteurs d'eau glacée, d'électricité, d'eau chaude et de vapeur.
+Les données proviennent de plus de 1 000 bâtiments sur une période de trois ans. Avec de meilleures estimations de ces investissements d'économie d'énergie,
+les investisseurs à grande échelle et les institutions financières seront plus enclins à investir dans ce domaine pour permettre des progrès dans le renforcement de l'efficacité.
 
-## Files
-suivi.ipynb the file that for monitoring. <br/>
-code the directory that contains codes.
+lien de la compétition et les données https://www.kaggle.com/c/ashrae-energy-prediction/overview
+
+## Contenu du repertoire:
+suivi.ipynb -- le fichier du suivi. <br/>
+code        -- le répertoire qui contient les codes. <br/>
+utils.py    -- Un fichier python qui contient des fonctions utilisées dans les notebooks.
