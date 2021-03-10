@@ -4,7 +4,7 @@ from pandas.api.types import is_datetime64_any_dtype as is_datetime
 from pandas.api.types import is_categorical_dtype
 import numpy as np
 import pandas as pd
-
+from sklearn.preprocessing import  LabelEncoder
 
 def reduce_mem_usage(df, use_float16=False):
     """
@@ -49,20 +49,33 @@ def reduce_mem_usage(df, use_float16=False):
     return df
 
 
-def time_features(df):
+
+class Data_Scaler_Encoder():
+    def __init__(self , cols_to_scale , cols_to_drop, cols_to_encode):
+        self.cols_to_scale = cols_to_scale
+        self.cols_to_drop = cols_to_drop
+        self.cols_to_encode = cols_to_encode
+        self.stats = {}
+        self.label_encoders = {}
     
-    # Sort by timestamp
-    df.sort_values("timestamp")
-    df.reset_index(drop=True)
+    def fit(self , data):
+        for col in cols_to_scale:
+            mean_col = data[col].mean()
+            std_col = data[col].std()
+            self.stats[col] = (mean_col , std_col)
+
+        for col in cols_to_encode:
+            le = LabelEncoder()
+            le.fit(data[col])
+            self.label_encoders[col] = le
+
     
-    # Add more features
-    df["timestamp_0"] = pd.to_datetime(df["timestamp"],format="%Y-%m-%d %H:%M:%S")
-    df["hour"] = df["timestamp_0"].dt.hour
-    df["dayofweek"] = df["timestamp_0"].dt.weekday
+    def transform(self , data):
+        for col in cols_to_scale:
+            data[col] = ( data[col] - self.stats[col][0])/ self.stats[col][1]
 
-    df['month'] = df['timestamp_0'].dt.month - 1
+        for col in cols_to_encode:
+            data[col] = label_encoders[col].transform(data[col])
 
-    df = df.drop(['timestamp_0'], axis=1)	
-    return df
-
+        return data
 
