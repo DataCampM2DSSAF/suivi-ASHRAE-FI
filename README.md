@@ -23,4 +23,4 @@ lien de la compétition et les données https://www.kaggle.com/c/ashrae-energy-p
 ## Contenu du repertoire:
 suivi.ipynb -- le fichier du suivi. <br/>
 code        -- le répertoire qui contient les codes. <br/>
-utils.py    -- Un fichier python qui contient des fonctions utilisées dans les notebooks.
+utils.py & feature_enginering.py    -- 2 fichiers python qui contient des fonctions utilisées dans les notebooks.
